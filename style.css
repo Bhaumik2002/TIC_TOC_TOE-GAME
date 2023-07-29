@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3e7f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #250925;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.nav-logo {
+    font-size: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    background-color: #911d91;
+    color: white;
+    border: 2px solid #250925;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box:hover {
+    background-color: #6e0c6e;
+}
+
+.info {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #911d91;
+}
+
+#reset {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #911d91;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#reset:hover {
+    background-color: #6e0c6e;
+}
+
+.imgbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transition: width 1s ease-in-out;
+}
+
+.line {
+    background-color: #911d91;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-rows: repeat(3, 80px);
+        grid-template-columns: repeat(3, 80px);
+        gap: 3px;
+    }
+
+    .box {
+        font-size: 32px;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+
+    #reset {
+        font-size: 18px;
+    }
+}
